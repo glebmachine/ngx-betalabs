@@ -1,6 +1,9 @@
 {
-  "name": "ngx-observable-input",
+  "name": "@betalabs/ngx-observable-input",
   "version": "0.0.1",
+  "scripts": {
+    "build": "cd ../../ && ng run ngx-observable-input:build"
+  },
   "peerDependencies": {
     "@angular/common": "^7.1.0",
     "@angular/core": "^7.1.0"

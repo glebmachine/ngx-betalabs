@@ -18,7 +18,7 @@ export function TakeUntilDestroy(destroyMethodName = 'ngOnDestroy') {
     }
 
     return class extends constructor {
-      private _takeUntilDestroy$: Subject<boolean>;
+      _takeUntilDestroy$: Subject<boolean>;
 
       get destroyed$() {
         if (!this._takeUntilDestroy$) {
