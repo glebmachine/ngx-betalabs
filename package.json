@@ -2,7 +2,8 @@
   "name": "betalabs",
   "version": "0.0.0",
   "scripts": {
-    "bootstrap": "lerna prepare"
+    "bootstrap": "lerna prepare",
+    "commit": "npx git-cz"
   },
   "private": true,
   "dependencies": {
@@ -14,6 +15,7 @@
     "@angular/platform-browser": "~7.1.0",
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
+    "commitizen": "3.0.5",
     "core-js": "^2.5.4",
     "lerna": "3.9.0",
     "rxjs": "~6.3.3",
@@ -30,6 +32,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "cz-conventional-changelog": "2.1.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.1.1",
@@ -44,5 +47,10 @@
     "tslib": "^1.9.0",
     "tslint": "~5.11.0",
     "typescript": "~3.1.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

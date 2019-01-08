@@ -5,7 +5,7 @@
     "build": "cd ../../ && ng run ngx-observable-input:build"
   },
   "peerDependencies": {
-    "@angular/common": "^7.1.0",
-    "@angular/core": "^7.1.0"
+    "@angular/common": ">=2.0.0",
+    "@angular/core": ">=2.0.0"
   }
 }
