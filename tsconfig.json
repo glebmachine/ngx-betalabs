@@ -17,6 +17,68 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-platform-service": [
+        "dist/ngx-platform-service"
+      ],
+      "ngx-platform-service/*": [
+        "dist/ngx-platform-service/*"
+      ],
+      "ngx-viewport-service": [
+        "dist/ngx-viewport-service"
+      ],
+      "ngx-viewport-service/*": [
+        "dist/ngx-viewport-service/*"
+      ],
+      "ngx-adaptive-service": [
+        "dist/ngx-adaptive-service"
+      ],
+      "ngx-adaptive-service/*": [
+        "dist/ngx-adaptive-service/*"
+      ],
+      "ngx-image-preload-service": [
+        "dist/ngx-image-preload-service"
+      ],
+      "ngx-image-preload-service/*": [
+        "dist/ngx-image-preload-service/*"
+      ],
+      "ngx-social-share-service": [
+        "dist/ngx-social-share-service"
+      ],
+      "ngx-social-share-service/*": [
+        "dist/ngx-social-share-service/*"
+      ],
+      "ngx-nprogress": [
+        "dist/ngx-nprogress"
+      ],
+      "ngx-nprogress/*": [
+        "dist/ngx-nprogress/*"
+      ],
+      "ngx-take-until-destroy": [
+        "dist/ngx-take-until-destroy"
+      ],
+      "ngx-take-until-destroy/*": [
+        "dist/ngx-take-until-destroy/*"
+      ],
+      "ngx-observable-input": [
+        "dist/ngx-observable-input"
+      ],
+      "ngx-observable-input/*": [
+        "dist/ngx-observable-input/*"
+      ],
+      "ngx-router-animation": [
+        "dist/ngx-router-animation"
+      ],
+      "ngx-router-animation/*": [
+        "dist/ngx-router-animation/*"
+      ],
+      "ngx-shared-template": [
+        "dist/ngx-shared-template"
+      ],
+      "ngx-shared-template/*": [
+        "dist/ngx-shared-template/*"
+      ]
+    }
   }
 }

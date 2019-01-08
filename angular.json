@@ -2,5 +2,77 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "ngx-take-until-destroy": {
+      "root": "projects/ngx-take-until-destroy",
+      "sourceRoot": "projects/ngx-take-until-destroy/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-take-until-destroy/tsconfig.lib.json",
+            "project": "projects/ngx-take-until-destroy/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-take-until-destroy/src/test.ts",
+            "tsConfig": "projects/ngx-take-until-destroy/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-take-until-destroy/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-take-until-destroy/tsconfig.lib.json",
+              "projects/ngx-take-until-destroy/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ngx-observable-input": {
+      "root": "projects/ngx-observable-input",
+      "sourceRoot": "projects/ngx-observable-input/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-observable-input/tsconfig.lib.json",
+            "project": "projects/ngx-observable-input/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-observable-input/src/test.ts",
+            "tsConfig": "projects/ngx-observable-input/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-observable-input/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-observable-input/tsconfig.lib.json",
+              "projects/ngx-observable-input/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngx-platform-service"
 }
