@@ -5,7 +5,7 @@ export interface OnDestroy {
   ngOnDestroy(): void;
 }
 
-function isFunction( value ) {
+function isFunction(value) {
   return typeof value === 'function';
 }
 

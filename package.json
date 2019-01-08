@@ -2,10 +2,16 @@
   "name": "betalabs",
   "version": "0.0.0",
   "scripts": {
-    "bootstrap": "lerna prepare",
-    "commit": "npx git-cz"
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "publish": "lerna publish --contents dist --yes",
+    "publish-canary": "lerna publish --contents dist --yes --canary",
+    "clear": "lerna exec 'rm -rf dist'",
+    "commit": "git-cz"
   },
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@angular/animations": "~7.1.0",
     "@angular/common": "~7.1.0",
@@ -17,7 +23,7 @@
     "@angular/router": "~7.1.0",
     "commitizen": "3.0.5",
     "core-js": "^2.5.4",
-    "lerna": "3.9.0",
+    "lerna": "^3.9.0",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"

@@ -1,11 +1,16 @@
 {
   "name": "@betalabs/ngx-take-until-destroy",
-  "version": "0.0.1",
+  "license": "MIT",
+  "version": "0.1.8",
   "scripts": {
     "build": "cd ../../ && ng run ngx-take-until-destroy:build"
   },
   "peerDependencies": {
     "@angular/common": ">=2.0.0",
     "@angular/core": ">=2.0.0"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "fb2b960a2b32a75bad7083ebe0356344c46081e3"
 }
